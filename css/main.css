@@ -53,22 +53,25 @@ nav.nav-bar {
 
 nav div.menu {
   box-sizing: border-box;
-
   position: fixed;
   top: 0;
   right: 0;
   background-color: #2E2145;
   font-size: 1.8rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   padding-top: 5rem;
   padding-left: 1rem;
   padding-right: 15rem;
 }
-
+/*Menu's buttons*/
 .button-menu {
   color: white;
   text-decoration: none;
   padding: 2.4rem;
+}
+
+a.button-menu:hover {
+  color: #ff02c0;
 }
 
 #login {
@@ -77,21 +80,20 @@ nav div.menu {
   padding: .8rem 1.6rem;
 }
 
-
+/*Logo*/
 .nav-bar-container div.logo-container {
   height: 3rem;
   width: 6rem;
   position: fixed;
   top: 4rem;
   left: 8rem;
-
 }
 
 #logo {
   width: 100%;
 }
 
-
+/*Background Image*/
 .background-image {
    background-image: url("../assets/images/hero.gif");
    background-repeat: no-repeat;
@@ -102,6 +104,7 @@ nav div.menu {
    width: 100%;
 }
 
+/*Header's Container*/
 header div.hdr-container {
   box-sizing: border-box;
   height: 41.9047rem;
@@ -109,11 +112,11 @@ header div.hdr-container {
   background-color: #F2F3F4;
   position: relative;
   right: 0;
-  left: 77.3rem;
-  top: 10rem;
+  left: 80rem;
+  top: 11rem;
   padding: 6.4rem;
 }
-
+/*Header's Title*/
 header div.hdr-container h1 {
   color: var(--color-form-title);
   font-size: var(--rem-huge);
@@ -134,7 +137,6 @@ header div.hdr-container p {
 
 header div.hdr-container .input-phone-number {
   border: none;
-
   width: 44.6578rem;
   padding-top: 1.84rem;
   padding-bottom: .4rem
@@ -149,4 +151,33 @@ outline: none;
   padding-left: 1rem;
   color: #D5DBDB;
   font-weight: normal;
+}
+
+
+/*Header's Buttons*/
+div.hdr-buttons-container{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+div.hdr-container a.button-hdr {
+  padding: 1.4rem 2rem;
+  font-size: var(--rem-regular);
+  text-align: center;
+  color: #909497;
+}
+
+a#b-become-a-driver {
+  color: var(--white-color);
+  text-decoration: none;
+  background-color: var(--hover-buttons);
+  border-radius: .8rem;
+}
+
+header div.hdr-container p#ultra-small-letters {
+  font-size: var(--rem-ultra-small);
+  color: #909497;
+  text-align: left;
+  text-transform: none;
+  line-height: 2rem;
 }
