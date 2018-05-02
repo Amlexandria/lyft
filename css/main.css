@@ -56,7 +56,7 @@ nav div.menu {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #2E2145;
+  /*background-color: #2E2145;*/
   font-size: 1.8rem;
   padding-bottom: 4rem;
   padding-top: 5rem;
@@ -94,10 +94,11 @@ a.button-menu:hover {
 }
 
 /*Background Image*/
-.background-image {
+div.background-image {
    background-image: url("../assets/images/hero.gif");
    background-repeat: no-repeat;
    background-size: cover;
+   display: flex;
    height: 75.8813rem;
    position: relative;
    top: -11.3rem;
@@ -180,4 +181,37 @@ header div.hdr-container p#ultra-small-letters {
   text-align: left;
   text-transform: none;
   line-height: 2rem;
+}
+
+/*Section One*/
+section.section-one {
+  background: var(--purple-gradient);
+  display: flex;
+  padding-left: 20rem;
+  padding-top: 20rem;
+  height: 64rem;
+}
+
+.section-one div.so-text-container {
+  color: var(--white-color);
+  height: 30rem;
+  width: 45rem;
+}
+
+section.section-one div.so-img {
+  height: 30rem;
+  width: 50rem;
+}
+
+div.so-img img#phone {
+  width: 100%;
+}
+
+div.so-text-container h2 {
+  text-transform: uppercase;
+  font-size: var(--rem-large);
+}
+
+div.so-text-container p {
+  font-size: var(--rem-regular);
 }
