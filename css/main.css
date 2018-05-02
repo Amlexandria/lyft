@@ -1,3 +1,42 @@
 /*
  * Estilos de tu proyecto
  */
+/*Reset*/
+html{
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+:root{
+  --hover-buttons:  #FF00BF;
+  --dark-grey: #333447;
+  --color-form-title: #352384;
+  --color-form-text: #728099;
+  --purple-gradient:linear-gradient(#76278F, #2B1E66);
+  --rem-huge: 4rem;
+  --rem-large: 2.8rem;
+  --rem-big: 2.4rem;
+  --rem-medium: 1.8rem;
+  --rem-regular: 1.6rem;
+  --rem-small: 1.4rem;
+  --rem-ultra-small: .9rem;
+
+}
+
+
+/*Images*/
+.background-image {
+   background-image: url("../assets/images/hero.gif");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 75.8813rem;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+
+
+ }
