@@ -5,6 +5,8 @@ html {
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #691B84;
+  /*background:linear-gradient(#53186D,#691B84);*/
 }
 
 :root{
@@ -23,29 +25,6 @@ body {
   --rem-ultra-small: .9rem;
 }
 
-/*.nav-bar {
-  box-sizing: border-box;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  }
-
-.nav-bar-container {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 8.85rem;
-  margin-right: 8.85rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-*/
 
 nav.nav-bar {
   box-sizing: border-box;
@@ -56,12 +35,12 @@ nav div.menu {
   position: fixed;
   top: 0;
   right: 0;
-  /*background-color: #2E2145;*/
   font-size: 1.8rem;
   padding-bottom: 4rem;
   padding-top: 5rem;
   padding-left: 1rem;
   padding-right: 15rem;
+  z-index: 1;
 }
 /*Menu's buttons*/
 .button-menu {
@@ -80,21 +59,15 @@ a.button-menu:hover {
   padding: .8rem 1.6rem;
 }
 
-/*Logo*/
-.nav-bar-container div.logo-container {
-  height: 3rem;
-  width: 6rem;
+#logo {
+  width: 4.5%;
   position: fixed;
   top: 4rem;
   left: 8rem;
 }
 
-#logo {
-  width: 100%;
-}
-
 /*Background Image*/
-div.background-image {
+header {
    background-image: url("../assets/images/hero.gif");
    background-repeat: no-repeat;
    background-size: cover;
@@ -106,19 +79,19 @@ div.background-image {
 }
 
 /*Header's Container*/
-header div.hdr-container {
+section div.hdr-container {
   box-sizing: border-box;
   height: 41.9047rem;
   width: 57.4578rem;
-  background-color: #F2F3F4;
+  background-color: var(--white-color);
   position: relative;
   right: 0;
-  left: 80rem;
-  top: 11rem;
+  left: 77.4rem;
+  top: 22rem;
   padding: 6.4rem;
 }
 /*Header's Title*/
-header div.hdr-container h1 {
+section div.hdr-container h1 {
   color: var(--color-form-title);
   font-size: var(--rem-huge);
   text-transform: uppercase;
@@ -126,7 +99,7 @@ header div.hdr-container h1 {
   margin: 0;
 }
 
-header div.hdr-container p {
+section div.hdr-container p {
   color: var(--color-form-title);
   font-size: var(--rem-small);
   text-transform: uppercase;
@@ -136,14 +109,14 @@ header div.hdr-container p {
   letter-spacing: .15rem;
 }
 
-header div.hdr-container .input-phone-number {
+section div.hdr-container .input-phone-number {
   border: none;
   width: 44.6578rem;
   padding-top: 1.84rem;
   padding-bottom: .4rem
 }
 
-header div.hdr-container .input-phone-number:focus {
+section div.hdr-container .input-phone-number:focus {
 outline: none;
 }
 
@@ -183,35 +156,39 @@ header div.hdr-container p#ultra-small-letters {
   line-height: 2rem;
 }
 
-/*Section One*/
-section.section-one {
-  background: var(--purple-gradient);
+/*Second Section*/
+section.second-section {
+  background: linear-gradient(rgba(115,36,140,0),rgba(44,30,103,1));
   display: flex;
-  padding-left: 20rem;
-  padding-top: 20rem;
+  padding-left: 15.5rem;
+  padding-top: 7rem;
   height: 64rem;
+  position: relative;
+  top: -20rem;
 }
 
-.section-one div.so-text-container {
+.second-section article.ss-text-container {
   color: var(--white-color);
   height: 30rem;
   width: 45rem;
 }
 
-section.section-one div.so-img {
-  height: 30rem;
-  width: 50rem;
+article.ss-text-container div{
+  padding-bottom: 2rem;
 }
 
-div.so-img img#phone {
-  width: 100%;
+img#phone {
+
+  height: 82%;
+  position: relative;
+  left: 9rem;
 }
 
-div.so-text-container h2 {
+article.ss-text-container h2 {
   text-transform: uppercase;
   font-size: var(--rem-large);
 }
 
-div.so-text-container p {
+article.ss-text-container p {
   font-size: var(--rem-regular);
 }
